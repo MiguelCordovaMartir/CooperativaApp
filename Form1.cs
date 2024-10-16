@@ -21,6 +21,9 @@ namespace CooperativaApp
         private void Form1_Load(object sender, EventArgs e)
         {
 
+            ConexionMySQL conexion = new ConexionMySQL();
+            conexion.ObtenerConexion();  
+            conexion.CerrarConexion();   
         }
 
         
